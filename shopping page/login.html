@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Login Form</title>
+<script language="javascript" type="text/javascript">
+function ValidateLogin()
+{
+//creating form variable
+var theform;
+//getting form data into the script
+theform=document.Regform;
+var Uname=theform.uname.value;
+var pwd=theform.pwd.value;
+//Checking for User name empty
+if(Uname.length==0)
+{
+window.alert("Enter your name:");
+theform.uname.focus();
+}
+//Checking user name must be in characters
+else if(!isNaN(Uname))
+{
+alert("Enter your name in characters only");
+theform.uname.focus();
+}
+
+//Checking password empty
+else if(pwd.length==0)
+{
+alert("Enter pwd");
+theform.pwd.focus();
+}
+//Checking password length must be 8 characters
+else if(pwd.length<8 || pwd.length>8)
+{
+alert("Password must contain maximum 8 characters");
+theform.pwd.focus();
+}
+else
+{
+alert("You have successfully submitted your information");
+}
+}//Close Validation function
+</script>
+ <link rel="stylesheet" href="css/styles.css">
+
+</head> 
+
+<body bgcolor="Teal" text="yellow"> 
+    <header> 
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="login.html">Login</a> 
+            <a href="register.html">Register</a> 
+            <a href="catalog.html">Catalog</a> 
+            <a href="cart.html">Cart</a> 
+        </nav> 
+    </header> 
+    <main> 
+        <!-- <form id="loginForm"> 
+            <h2>Login</h2> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" required> 
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password" required> 
+            <button type="submit">Login</button> 
+        </form>  -->
+
+       
+ <form name="Regform" method="post">
+<h1>User Name:<input type="email" name="uname" minlength="15" maxlength="20"><br/>
+<h1>Password:<input type="password" name="pwd" minlength="6" maxlength="8"><br/> 
+<input type="button" name="cmdsubmit" onclick="ValidateLogin()" value="SubmitForm"> <input type="reset" value="ClearForm">
+
+    </main> 
+    <script src="./script.js "></script> 
+</body> 
+</html>

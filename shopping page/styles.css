@@ -1,0 +1,254 @@
+/* Reset some default browser styles 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    } 
+    body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    } 
+    header { 
+    background: #BF8FCC ; 
+    color: #fff; 
+    padding: 2rem 0;  
+    font-size: 1.5rem;
+    font-style: 'Bernard MT Condensed';
+    } 
+    nav { 
+    display: flex; 
+    justify-content: center; 
+    } 
+    nav a {
+        background-color: white; /**/
+   /*     color: #BF8FCC; /*Text color */
+        /* padding: 10px 20px; /* Padding inside each box */
+        /* margin: 0 10px; Space between the boxes */
+        /* text-decoration: none; Remove underline from links */
+        /* border-radius: 5px; Rounded corners */
+        /* font-weight: bold; Make the text bold */
+      /* } */
+
+/*     
+      
+    main { 
+    padding: 20rem; 
+    max-width: 1500px;
+    text-align: center; 
+    font-family: "Castellar";
+    font-size: 30px;
+    color: 	#803790;
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto; 
+    } 
+
+    nav a:hover {
+        background-color: #a4c2f4; /* Light blue background on hover */
+      /* }
+    form { 
+    display: flex; 
+    flex-direction: column; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    } 
+    form label { 
+    margin: 0.5rem 0 0.2rem; 
+    } 
+    form input { 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    } 
+    form button { 
+    padding: 0.7rem; 
+    background: #333; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    } 
+    form button:hover { 
+    background: #555; 
+    } 
+    .product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    } 
+    .product-item, .cart-item { 
+    border: 1px solid #ddd; 
+    padding: 1rem; 
+    text-align: center; 
+    } 
+    .product-item img, .cart-item img { 
+    max-width: 100%; 
+    height: auto; 
+    } 
+    .product-item button, .cart-item button { 
+    padding: 0.5rem; 
+    background: #333; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    } 
+    .product-item button:hover, .cart-item button:hover { 
+    background: #555; 
+    } */ 
+
+    /* Reset default browser styles */
+
+
+    /* Apply background image to the body for consistent appearance across all pages */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: url(images/bg.jpg) no-repeat center center fixed; /* Apply background */
+      background-size: cover; /* Ensure it covers the whole page */
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Reset default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: #BF8FCC;
+      color: #fff;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      font-family: 'Bernard MT Condensed';
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav a {
+      background-color: white;
+      color: #BF8FCC;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    
+    nav a:hover {
+      background-color: #a4c2f4;
+    }
+    
+    /* Main section styling */
+    main {
+      padding: 5rem 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: "Castellar";
+      font-size: 20px;
+      color: #803790;
+    }
+    
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+    
+    form label {
+      margin: 0.5rem 0 0.2rem;
+    }
+    
+    form input {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    form button {
+      padding: 0.7rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+      background-color: #555;
+    }
+    
+    /* Product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    
+    /* Product and cart item styles */
+    .product-item, .cart-item {
+      border: 2px solid #fff;
+      padding: 1rem;
+      text-align: center;
+      background-color: beige;
+      width: 100%; /* Full width */
+      border-radius: 50px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .product-item:hover, .cart-item:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Cart items container (center and vertical grid layout) */
+    .cart-items {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column for vertical grid */
+      gap: 1.5rem; /* Space between cart items */
+      justify-items: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+      max-width: 600px; /* Max width for the grid container */
+      margin: 0 auto; /* Center the container on the page */
+      padding: 2rem;
+    }
+    
+    .cart-item {
+      display: flex; /* Enable Flexbox */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      padding: 1rem;
+    }
+    
+    .product-item img, .cart-item img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .product-item button, .cart-item button {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .product-item button:hover, .cart-item button:hover {
+      background-color: #555;
+    }
+    
+   #wel{
+   margin-block: 25%;
+   }
+    
